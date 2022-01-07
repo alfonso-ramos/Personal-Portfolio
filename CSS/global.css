@@ -455,3 +455,12 @@ padding-top: 2rem;
   padding: 1.5rem 0;
   align-self: center;
 }
+/* Footer */
+footer{
+  background-color: var(--rich-balck);
+  height: 8rem;
+
+}
+footer p{
+  padding-top: 2.5rem ;
+}
