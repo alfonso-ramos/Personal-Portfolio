@@ -375,6 +375,7 @@ body{
   max-width: 120rem;
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
 a{
   text-decoration: none;
@@ -508,13 +509,31 @@ padding-top: 2rem;
 }
 .img-card img{
 }
+/* Seccion del "Quien soy" */
+.img-poncho{
+  background-image: url(../Assets/img/poncho.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+}
+@media (min-width: 760px){
+  .bio-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
 /* Footer */
 footer{
   background-color: var(--rich-balck);
-  height: 8rem;
+  height: auto;
   border-top: 2px solid var(--independece2);
+  padding-bottom: 2rem;
 }
 footer p{
   padding-top: 2.5rem ;
   text-align: center;
+}
+footer .container{
+  padding: 0;
 }
