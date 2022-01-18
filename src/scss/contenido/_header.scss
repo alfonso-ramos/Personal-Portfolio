@@ -1,0 +1,41 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/* Header section */
+header{
+    background-color: v.$principal;
+    height: auto;
+    border-bottom: 2px solid v.$terciario;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    @include m.tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.header-logo{
+    color: v.$silver;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 2rem ;
+    &:hover{
+        color: v.$secundario;
+    }
+    @include m.tablet{
+            justify-content: left;
+    }
+}
+.links-portfolio a{
+    color: v.$silver;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    display: block;
+    &:hover{
+        color: v.$secundario;
+    }
+    @include m.tablet{
+            margin-right: 1.5rem;
+            display: inline;
+    }
+}

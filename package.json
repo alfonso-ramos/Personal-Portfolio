@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfonso-ramos/Personal-Portfolio.git"
+  },
+  "author": "Alfonso Ramos <alfonsoramos.1803@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alfonso-ramos/Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/alfonso-ramos/Personal-Portfolio#readme",
+  "devDependencies": {
+    "gulp-plumber": "^1.2.1",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.48.0"
+  },
+  "dependencies": {
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1"
+  }
+}

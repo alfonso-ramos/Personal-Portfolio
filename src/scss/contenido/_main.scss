@@ -1,0 +1,72 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+/* Main Section */
+main{
+    background-color: v.$principal;
+    height: 100%;
+}
+.h1-prototype{
+padding-top: 2rem;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-flow: row;
+    gap: 2rem;
+}
+.cards-container__used{
+    @include m.tablet{
+        justify-items: center;
+    }
+}
+.cards-container__learning{
+    @include m.tablet{
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 4rem;
+    }
+}
+.cards-container__learning .card{
+    @include m.tablet{
+        width: 18rem;
+        justify-self: center;
+    }
+}
+.card{
+    background-color: v.$secundario;
+    border-radius: 1rem;
+    display: grid;
+    height: 25rem;
+    @include m.tablet{
+        width: 16rem;
+        height: 24rem;
+    }
+}
+.card p{
+    text-align: center;
+    margin: 1rem;
+    align-self: center;
+}
+.img-card{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 1.5rem 0;
+    align-self: center;
+}
+  /* Seccion del "Quien soy" */
+.img-poncho{
+    background-image: url('/build/img/poncho.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+}
+.bio-container{
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+

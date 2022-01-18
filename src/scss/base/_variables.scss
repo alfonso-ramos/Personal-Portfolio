@@ -1,0 +1,34 @@
+//Colores
+$principal:#0E131F;
+$secundario:#38405F;
+$terciario:#59546C;
+$silver:#8B939C;
+$rojo:#FF0035;
+
+//Tipografia
+$fuente-principal:'Poppins', sans-serif;
+
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+  }
+  *,*:before,*:after{
+    box-sizing: inherit;
+  }
+  body{
+    font-family: $fuente-principal ;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  /* Utilities */
+.no-margin{
+    margin: 0;
+  }
+  .no-padding{
+    padding: 0;
+  }
+  .text-center{
+    text-align: center;
+  }

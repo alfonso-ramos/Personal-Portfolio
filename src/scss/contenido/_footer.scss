@@ -1,0 +1,14 @@
+@use '../base/variables' as v;
+footer{
+    background-color: v.$principal;
+    height: auto;
+    border-top: 2px solid v.$secundario;
+    padding-bottom: 2rem;
+}
+footer p{
+    padding-top: 2.5rem ;
+    text-align: center;
+}
+footer .container{
+    padding: 0;
+}
