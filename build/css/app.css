@@ -460,7 +460,7 @@ header {
 /* Main Section */
 main {
   background-color: #0E131F;
-  height: 100%;
+  height: auto;
 }
 
 .h1-prototype {
@@ -469,7 +469,7 @@ main {
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: row;
   gap: 2rem;
 }
@@ -477,6 +477,7 @@ main {
 @media (min-width: 768px) {
   .cards-container__used {
     justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -498,13 +499,21 @@ main {
   background-color: #38405F;
   border-radius: 1rem;
   display: grid;
-  height: 25rem;
+  height: auto;
 }
 @media (min-width: 768px) {
   .card {
-    width: 16rem;
-    height: 24rem;
+    width: 18rem;
+    height: 28rem;
   }
+}
+.card img {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  padding: 1.5rem 0;
+  align-self: center;
 }
 
 .card p {
@@ -513,19 +522,8 @@ main {
   align-self: center;
 }
 
-.img-card {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  padding: 1.5rem 0;
-  align-self: center;
-}
-
 /* Seccion del "Quien soy" */
 .img-poncho {
-  background-image: url("/build/img/poncho.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 40rem;
   display: flex;
 }
