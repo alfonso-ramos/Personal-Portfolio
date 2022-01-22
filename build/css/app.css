@@ -477,20 +477,23 @@ main {
 @media (min-width: 768px) {
   .cards-container__used {
     justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
   }
 }
 
 @media (min-width: 768px) {
   .cards-container__learning {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
     padding-bottom: 4rem;
   }
 }
 
 @media (min-width: 768px) {
-  .cards-container__learning .card {
-    width: 18rem;
+  .cards-container__learning {
     justify-self: center;
   }
 }
@@ -504,7 +507,7 @@ main {
 @media (min-width: 768px) {
   .card {
     width: 18rem;
-    height: 28rem;
+    height: auto;
   }
 }
 .card img {
