@@ -3,7 +3,7 @@ const { src, dest, watch, parallel } = require('gulp');
 // CSS
 const sass = require('gulp-sass')(require('sass'));
 const plumber = require('gulp-plumber')
-//Imagenes
+//Convertir imagenes a webp
 const webp = require('gulp-webp')
 function css(fn) {
     // Identificar los archivos sass
