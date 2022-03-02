@@ -382,6 +382,7 @@ a {
 h1, h2, h3, h4 {
   margin-top: 0;
   color: #8B939C;
+  line-height: 5rem;
 }
 
 h1 {
@@ -403,6 +404,7 @@ h4 {
 p {
   color: #8B939C;
   font-size: 2rem;
+  line-height: 3rem;
 }
 
 img {
@@ -525,6 +527,10 @@ main {
   align-self: center;
 }
 
+.highlight {
+  color: #FF0035;
+}
+
 /* Seccion del "Quien soy" */
 .img-poncho {
   height: 40rem;
@@ -535,6 +541,33 @@ main {
   .bio-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.project {
+  background-color: #38405F;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.project .project-title {
+  font-weight: bold;
+  font-size: 4rem;
+}
+.project .link-adviser {
+  text-align: center;
+  color: #0E131F;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+  .project a {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     gap: 2rem;
   }
 }
