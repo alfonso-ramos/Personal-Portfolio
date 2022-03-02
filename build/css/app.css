@@ -462,7 +462,7 @@ header {
 /* Main Section */
 main {
   background-color: #0E131F;
-  height: auto;
+  min-height: auto;
 }
 
 .h1-prototype {
@@ -533,7 +533,9 @@ main {
 
 /* Seccion del "Quien soy" */
 .img-poncho {
-  height: 40rem;
+  min-height: 30rem;
+  min-width: 20rem;
+  max-width: auto;
   display: flex;
 }
 
@@ -542,6 +544,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    align-items: center;
+    padding-bottom: 15rem;
   }
 }
 
@@ -554,13 +558,14 @@ main {
 .project .project-title {
   font-weight: bold;
   font-size: 4rem;
+  line-height: 6rem;
 }
 .project .link-adviser {
   text-align: center;
   color: #0E131F;
   font-weight: bold;
   font-size: 2.5rem;
-  text-decoration: underline;
+  text-decoration: underline #FF0035;
 }
 
 @media (min-width: 992px) {

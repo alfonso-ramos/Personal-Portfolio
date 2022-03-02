@@ -3,7 +3,7 @@
 /* Main Section */
 main{
     background-color: v.$principal;
-    height: auto;
+    min-height: auto;
 }
 .h1-prototype{
 padding-top: 2rem;
@@ -63,8 +63,9 @@ padding-top: 2rem;
 }
   /* Seccion del "Quien soy" */
 .img-poncho{
-
-    height: 40rem;
+    min-height: 30rem;
+    min-width: 20rem;
+    max-width: auto;
     display: flex;
 }
 .bio-container{
@@ -72,6 +73,8 @@ padding-top: 2rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+        align-items: center;
+        padding-bottom: 15rem;
     }
 }
 // Seccion de Proyetos
@@ -84,14 +87,16 @@ padding-top: 2rem;
     .project-title{
         font-weight: bold;
         font-size: 4rem;
+        line-height: 6rem;
     }
     .link-adviser{
         text-align: center;
         color: v.$principal;
         font-weight: bold;
         font-size: 2.5rem;
-        text-decoration: underline;
+        text-decoration: underline v.$rojo;
     }
+
 }
 .project a{
     @include m.desktop{
